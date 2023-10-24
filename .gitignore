@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# rider 
+.idea
+
 # Compiled Object files
 *.slo
 *.lo

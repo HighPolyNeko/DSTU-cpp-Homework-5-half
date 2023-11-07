@@ -1,5 +1,7 @@
 #include <iostream>
+
 #include "DynamicArray.h"
+#include "Functions.h"
 
 int main() {
     DynamicArray arr;
@@ -8,10 +10,8 @@ int main() {
     arr.add(20);
     arr.add(30);
 
-    for (int i = 0; i < arr.size(); ++i) {
-        std::cout << i << ": " << arr.get(i) << std::endl;
-    }
-
+    printArray::print(arr);
+    
     return 0;
 }
 

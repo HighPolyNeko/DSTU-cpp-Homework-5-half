@@ -1,9 +1,11 @@
 ﻿#include <iostream>
 #include "DynamicArray.h"
 
-DynamicArray::DynamicArray() : data(new int[1]), capacity(1), currentSize(0) {}
+DynamicArray::DynamicArray() : data(new int[1]), capacity(1), currentSize(0) {
+}
 
-DynamicArray::DynamicArray(const int length) : data(new int[length] {NULL}), capacity(length), currentSize(length) {}
+DynamicArray::DynamicArray(const int length) : data(new int[length]{NULL}), capacity(length), currentSize(length) {
+}
 
 DynamicArray::~DynamicArray() {
     delete[] data;

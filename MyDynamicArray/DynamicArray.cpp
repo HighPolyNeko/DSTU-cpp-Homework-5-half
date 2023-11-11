@@ -33,7 +33,7 @@ void DynamicArray::set(int index, int value) {
 }
 
 // Получить текущий размер массива
-int DynamicArray::size() const {
+int DynamicArray::size() {
     return currentSize;
 }
 

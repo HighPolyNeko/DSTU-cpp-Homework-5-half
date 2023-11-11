@@ -15,5 +15,5 @@ public:
     void add(int value); // Добавить элемент в массив
     int get(int index); // Получить элемент по индексу
     void set(int index, int value); // Задать элемент по индексу
-    int size() const; // Получить текущий размер массива
+    int size(); // Получить текущий размер массива
 };

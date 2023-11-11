@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "DynamicArray.h"
 
-namespace printArray
+namespace printDynamicArray
 {
     void print(DynamicArray& arr);
 }

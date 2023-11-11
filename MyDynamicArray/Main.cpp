@@ -4,13 +4,13 @@
 #include "Functions.h"
 
 int main() {
-    DynamicArray arr(3);
+    DynamicArray arr(2);
 
     arr.add(10);
     arr.add(20);
     arr.add(30);
 
-    printArray::print(arr);
+    printDynamicArray::print(arr);
     
     return 0;
 }

@@ -6,11 +6,14 @@ class DynamicArray {
     int currentSize; // Текущий размер массива
 
     void resize(); // Увеличить размер массива
+    void copy(int arr[], int newArr[]);
 public:
     DynamicArray(); 
+    DynamicArray(int lenth); 
     ~DynamicArray(); 
 
     void add(int value); // Добавить элемент в массив
-    int get(int index) const; // Получить элемент по индексу
+    int get(int index); // Получить элемент по индексу
+    void set(int index, int value); // Задать элемент по индексу
     int size() const; // Получить текущий размер массива
 };

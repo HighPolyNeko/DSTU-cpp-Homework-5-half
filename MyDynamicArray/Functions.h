@@ -3,5 +3,5 @@
 
 namespace printArray
 {
-    void print(const DynamicArray& arr);
+    void print(DynamicArray& arr);
 }

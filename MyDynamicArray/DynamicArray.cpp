@@ -3,7 +3,7 @@
 
 DynamicArray::DynamicArray() : data(new int[1]), capacity(1), currentSize(0) {}
 
-DynamicArray::DynamicArray(const int lenth) : data(new int[lenth]), capacity(lenth), currentSize(lenth) {}
+DynamicArray::DynamicArray(const int length) : data(new int[length] {NULL}), capacity(length), currentSize(length) {}
 
 DynamicArray::~DynamicArray() {
     delete[] data;

@@ -4,7 +4,7 @@
 #include "Functions.h"
 
 int main() {
-    DynamicArray arr;
+    DynamicArray arr(3);
 
     arr.add(10);
     arr.add(20);

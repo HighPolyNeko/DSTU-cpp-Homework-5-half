@@ -9,7 +9,7 @@ class DynamicArray {
     void copy(int arr[], int newArr[]);
 public:
     DynamicArray(); 
-    DynamicArray(int lenth); 
+    DynamicArray(int length); 
     ~DynamicArray(); 
 
     void add(int value); // Добавить элемент в массив

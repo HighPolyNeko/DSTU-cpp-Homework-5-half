@@ -1,8 +1,11 @@
 ﻿#pragma once
 #include "Character.h"
 
-class Hero: Character
+class Hero: public Character
 {
 public:
+    Hero();
+    ~Hero();
     
+    void useAbility();
 };

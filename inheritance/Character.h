@@ -1,12 +1,16 @@
 ﻿#pragma once
 #include "GameObject.h"
 
-class Character: GameObject
+class Character: public GameObject
 {
+protected:
     int healPoints;
     int strength;
 public:
-    void move();
+    Character();
+    ~Character();
+    
+    void move(int x, int y);
     void attack();
     void getDamage();
 };

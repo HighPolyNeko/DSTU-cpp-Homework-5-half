@@ -2,6 +2,7 @@
 
 class GameObject
 {
+protected:
     int x;
     int y;
 public:

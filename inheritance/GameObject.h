@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-class GameObject
+class GameObject abstract
 {
 protected:
     int x;
@@ -8,6 +8,8 @@ protected:
 public:
     GameObject();
     ~GameObject();
+
+    virtual void spawn() = 0;
     
     void show();
     void update();

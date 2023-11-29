@@ -9,6 +9,8 @@ protected:
 public:
     Character();
     ~Character();
+
+    void spawn() override;
     
     void move(int x, int y);
     void attack();

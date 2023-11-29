@@ -7,15 +7,10 @@
 #include "Hero.h"
 #include "Mage.h"
 
-void test::gameObject()
-{
-    GameObject gm = GameObject();
-    gm.show();
-}
-
 void test::character()
 {
     Character character1 = Character();
+    character1.spawn();
     character1.show();
     character1.move(10, 20);
 }
@@ -23,6 +18,7 @@ void test::character()
 void test::hero()
 {
     Hero h = Hero();
+    h.spawn();
     h.show();
     h.move(5, 10);
     h.useAbility();
@@ -31,6 +27,7 @@ void test::hero()
 void test::mage()
 {
     Mage maga = Mage();
+    maga.spawn();
     maga.show();
     maga.move(15, 3);
     maga.cast();
@@ -44,10 +41,6 @@ void test::delimiter()
 void test::execute()
 {
     setlocale(LC_ALL, "RU");
-    
-    std::cout << "### GameObject ###" << std::endl;
-    gameObject();
-    delimiter();
     
     std::cout << "### Character ###" << std::endl;
     character();

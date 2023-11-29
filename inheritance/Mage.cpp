@@ -10,6 +10,10 @@ Mage::~Mage()
 {
 }
 
+void Mage::spawn() {
+    std::cout << "Он заспавнился, кайф!!!" << std::endl;
+}
+
 void Mage::cast()
 {
     if (mana < 10)

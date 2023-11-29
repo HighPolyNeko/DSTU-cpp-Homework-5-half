@@ -12,6 +12,10 @@ Character::~Character()
 {
 }
 
+void Character::spawn() {
+    std::cout << "Жесть, он что заспавнился?" << std::endl;
+}
+
 void Character::move(int x, int y)
 {
     this->x += x;

@@ -7,6 +7,8 @@ class Mage: public Hero
 public:
     Mage();
     ~Mage();
+
+    void spawn() override;
     
     void cast();
 };

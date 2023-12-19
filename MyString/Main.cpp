@@ -4,19 +4,23 @@
 
 int main(int argc, char* argv[])
 {
-    setlocale(LC_ALL, "RU-UA.UTF-8");
-    
     Str hello = Str("Hello");
     Str word = Str("word");
     
+    hello.concatenate(" ");
+    hello.concatenate(word);
+    hello.concatenate("! Man I Love Frogs!");
+    hello.upperCase();
     hello.println();
-    hello += " ";
-    hello += word;
-    hello += "! Блин реально привет мир";
-    hello.print();
 
-    std::cout << hello.charAt(10);
+    std::cout << hello.charAt(12);
+    std::cout << hello.charAt(16);
+    std::cout << hello.charAt(18);
+    std::cout << hello.charAt(23);
     std::cout << hello.charAt(-10);
+
+    hello.lowerCase();
+    hello.print();
     
     return 0;
 }

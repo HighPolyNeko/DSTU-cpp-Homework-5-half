@@ -3,7 +3,6 @@
 
 class Str
 {
-protected:
     char* str_;
     int lenth;
 public:
@@ -11,14 +10,14 @@ public:
     Str(const char *str);
     ~Str();
 
-    Str& operator=(const char *str);
-    Str& operator=(const Str &str);
-    Str& operator+=(const char *str);
-    Str& operator+=(const Str &str);
-
+    void concatenate(const char *str);
+    void concatenate(const Str& str);
+    void concatenate(char str);
     int len();
     void print();
     void println();
     char charAt(int index);
     bool isEmpty();
+    void lowerCase();
+    void upperCase();
 };
